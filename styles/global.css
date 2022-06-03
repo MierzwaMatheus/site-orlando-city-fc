@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+:root {
+  --primary-color: hsl(268, 58%, 38%);
+  --secondary-color: hsl(44, 96%, 78%);
+  --primary-detail: hsl(268, 52%, 37%);
+
+  --gb-color: #fff;
+
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+header {
+  width: 100%;
+  height: 15rem;
+  background: var(--primary-color);
+  position: relative;
+}
+
+header .container {
+  position: relative;
+}
+
+header .header-black {
+  background: black;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+}
+
+header .header-black ul {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 1.5rem;
+  
+}
+
+/* ==================header clubes=============== */
+
+
+header .header-black li {
+  background: url("../assets/images/clubs.png") no-repeat;
+}
+
+header .header-black li.club-02 {
+  background-position: -4.5rem 0rem;
+}
+header .header-black li.club-03 {
+  background-position: -9rem 0rem;
+}
+header .header-black li.club-04 {
+  background-position: -13.9rem 0rem;
+}
+header .header-black li.club-05 {
+  background-position: -19.2rem 0rem;
+}
+header .header-black li.club-06 {
+  background-position: -24rem 0rem;
+}
+header .header-black li.club-07 {
+  background-position: -28.7rem 0rem;
+}
+header .header-black li.club-08 {
+  background-position: -33.5rem 0rem;
+}
+header .header-black li.club-09 {
+  background-position: -38rem 0rem;
+}
+header .header-black li.club-10 {
+  background-position: -43rem 0rem;
+}
+header .header-black li.club-11 {
+  background-position: -48rem 0rem;
+}
+header .header-black li.club-12 {
+  background-position: -52.8rem 0rem;
+}
+header .header-black li.club-13 {
+  background-position: -57.8rem 0rem;
+}
+header .header-black li.club-14 {
+  background-position: -62.8rem 0rem;
+}
+header .header-black li.club-15 {
+  background-position: -67.3rem 0rem;
+}
+header .header-black li.club-16 {
+  background-position: -71.9rem 0rem;
+}
+header .header-black li.club-17 {
+  background-position: -75.9rem 0rem;
+}
+header .header-black li.club-18 {
+  background-position: -80.5rem 0rem;
+}
+header .header-black li.club-19 {
+  background-position: -85.5rem 0rem;
+}
+header .header-black li.club-20 {
+  background-position: -90.2rem 0rem;
+}
+header .header-black li.club-21 {
+  background-position: -94.9rem 0rem;
+}
+
+header .header-black li a {
+  width: 3.2rem;
+  height: 3.2rem;
+  display: block;  
+}
+
+/* ==================header inferior=============== */
+
+header #logo {
+  position: absolute;
+  top: -1.7rem;
+}
+
+header .options {
+  display: flex;
+  justify-content: end;
+  top: 3.9rem;
+  position: relative;
+}
+
+header .options ul {
+  display: flex;
+  align-items: center;
+  position: relative;
+  gap: 5.5rem;
+}
+
+header .options a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.8rem;
+}
+
+header .options .search {
+  border-radius: .5rem;
+}
+
+header .options .search input {
+  background: var(--primary-detail);
+  border: none;
+  padding: 1rem;
+}
+
+header .options .search input::placeholder {
+  color: #fff;
+  font-size: 1.5rem;
+}
