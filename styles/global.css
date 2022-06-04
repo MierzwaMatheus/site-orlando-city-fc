@@ -14,6 +14,7 @@
 body {
   font-family: 'Open Sans', sans-serif;
   width: 100%;
+  background: #fff;
 }
 
 .line {
@@ -21,6 +22,7 @@ body {
   width: 20rem;
   margin: 0;
   margin-top: 1.5rem;
+  opacity: 1;
 }
 
 header {
@@ -34,7 +36,7 @@ header {
 
 header .header-black {
   background: black;
-  height: 4rem;
+  height: 6rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -429,19 +431,32 @@ main .call-to-action .buttons {
 main .call-to-action .buttons .shop, main .call-to-action .buttons .register {
   width: 16.5rem;
   height: 4.5rem;
-  font-size: 1.2rem;
+  font-size: 1.6rem;
+  font-weight: 700;
   border: none;
   margin-top: 4.5rem;
 }
 
-main .call-to-action .buttons .shop {
+main .call-to-action .shop {
   background: #5d2999;
   color: white;
+  -webkit-transition: background .3s;
+  transition: background .3s;
 }
 
-main .call-to-action .buttons .register {
+main .call-to-action .shop:hover {
+  background: rgba(93, 41, 153, 0.8);
+}
+
+main .call-to-action .register {
   background: #fde091;
   color: black;
+  -webkit-transition: background .3s;
+  transition: background .3s;
+}
+
+main .call-to-action .register:hover {
+  background: rgba(253, 224, 145, 0.8);
 }
 
 footer {
@@ -465,8 +480,8 @@ footer .footer-top {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  padding: 3.5rem 0 1.5rem;
   padding-inline: 11rem;
-  padding-block: 4.5rem;
   margin-top: 11.5rem;
   color: white;
   gap: 3rem;

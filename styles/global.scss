@@ -17,6 +17,7 @@
 body {
   font-family: 'Open Sans', sans-serif;
   width: 100%;
+  background: $gb-color;
 }
 
 .line {
@@ -24,6 +25,7 @@ body {
   width: 20rem;
   margin: 0;
   margin-top: 1.5rem;
+  opacity: 1;
 }
 
 header {
@@ -38,12 +40,13 @@ header {
 
   .header-black {
       background: black;
-      height: 4rem;
+      height: 6rem;
       display: flex;
       align-items: center;
 
       .container {
         position: relative;
+
   
         ul {
           display: flex;
@@ -305,23 +308,36 @@ main {
       .shop, .register {
         width: 16.5rem;
         height: 4.5rem;
-        font-size: 1.2rem;
+        font-size: 1.6rem;
+        font-weight: 700;
         border: none;
         margin-top: 4.5rem;
+        }
       }
   
       .shop {
         background: $primary-color;
         color: white;
+
+        transition: background .3s;
+
+        &:hover {
+        background: $primary-hover;
+      }
       }
   
       .register {
         background: $secondary-color;
         color: black;
+
+        transition: background .3s;
+
+        &:hover {
+        background: $secondary-hover;
+      }
       }
     }
   }
-}
 
 footer {
   background: $bg-footer-top;
@@ -330,8 +346,8 @@ footer {
     @include displayFlex(start, row);
     align-items: flex-start;
 
+    padding: 3.5rem 0 1.5rem;
     padding-inline: 11rem;
-    padding-block: 4.5rem;
   
     margin-top: 11.5rem;
 
