@@ -1,163 +1,324 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  text-decoration: none;
-  list-style: none;
-}
-
-:root {
-  --primary-color: hsl(268, 58%, 38%);
-  --secondary-color: hsl(44, 96%, 78%);
-  --primary-detail: hsl(268, 52%, 37%);
-
-  --gb-color: #fff;
-
-  font-size: 62.5%;
-}
-
-body {
-  font-family: 'Open Sans', sans-serif;
-}
-
 header {
   width: 100%;
   height: 15rem;
-  background: var(--primary-color);
+  background: rgba(93, 41, 153, 0.8);
   position: relative;
+  z-index: 2;
+}
+
+header .header-black {
+  background: black;
+  height: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .header-black .container {
+  position: relative;
+}
+
+header .header-black .container ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  gap: 1.5rem;
+}
+
+header .header-black .container ul li {
+  background: url("../assets/images/clubs.png") no-repeat;
+}
+
+header .header-black .container ul .club-02 {
+  background-position: -4.5rem 0rem;
+}
+
+header .header-black .container ul .club-03 {
+  background-position: -9rem 0rem;
+}
+
+header .header-black .container ul .club-04 {
+  background-position: -13.9rem 0rem;
+}
+
+header .header-black .container ul .club-05 {
+  background-position: -19.2rem 0rem;
+}
+
+header .header-black .container ul .club-06 {
+  background-position: -24rem 0rem;
+}
+
+header .header-black .container ul .club-07 {
+  background-position: -28.7rem 0rem;
+}
+
+header .header-black .container ul .club-08 {
+  background-position: -33.5rem 0rem;
+}
+
+header .header-black .container ul .club-09 {
+  background-position: -38rem 0rem;
+}
+
+header .header-black .container ul .club-10 {
+  background-position: -43rem 0rem;
+}
+
+header .header-black .container ul .club-11 {
+  background-position: -48rem 0rem;
+}
+
+header .header-black .container ul .club-12 {
+  background-position: -52.8rem 0rem;
+}
+
+header .header-black .container ul .club-13 {
+  background-position: -57.8rem 0rem;
+}
+
+header .header-black .container ul .club-14 {
+  background-position: -62.8rem 0rem;
+}
+
+header .header-black .container ul .club-15 {
+  background-position: -67.3rem 0rem;
+}
+
+header .header-black .container ul .club-16 {
+  background-position: -71.9rem 0rem;
+}
+
+header .header-black .container ul .club-17 {
+  background-position: -75.9rem 0rem;
+}
+
+header .header-black .container ul .club-18 {
+  background-position: -80.5rem 0rem;
+}
+
+header .header-black .container ul .club-19 {
+  background-position: -85.5rem 0rem;
+}
+
+header .header-black .container ul .club-20 {
+  background-position: -90.2rem 0rem;
+}
+
+header .header-black .container ul .club-21 {
+  background-position: -94.9rem 0rem;
+}
+
+header .header-black .container ul a {
+  width: 3.2rem;
+  height: 3.2rem;
+  display: block;
 }
 
 header .container {
   position: relative;
 }
 
-header .header-black {
-  background: black;
-  height: 4rem;
-  display: flex;
-  align-items: center;
-}
-
-header .header-black ul {
-  display: flex;
-  align-items: center;
-  justify-content: end;
-  gap: 1.5rem;
-  
-}
-
-/* ==================header clubes=============== */
-
-
-header .header-black li {
-  background: url("../assets/images/clubs.png") no-repeat;
-}
-
-header .header-black li.club-02 {
-  background-position: -4.5rem 0rem;
-}
-header .header-black li.club-03 {
-  background-position: -9rem 0rem;
-}
-header .header-black li.club-04 {
-  background-position: -13.9rem 0rem;
-}
-header .header-black li.club-05 {
-  background-position: -19.2rem 0rem;
-}
-header .header-black li.club-06 {
-  background-position: -24rem 0rem;
-}
-header .header-black li.club-07 {
-  background-position: -28.7rem 0rem;
-}
-header .header-black li.club-08 {
-  background-position: -33.5rem 0rem;
-}
-header .header-black li.club-09 {
-  background-position: -38rem 0rem;
-}
-header .header-black li.club-10 {
-  background-position: -43rem 0rem;
-}
-header .header-black li.club-11 {
-  background-position: -48rem 0rem;
-}
-header .header-black li.club-12 {
-  background-position: -52.8rem 0rem;
-}
-header .header-black li.club-13 {
-  background-position: -57.8rem 0rem;
-}
-header .header-black li.club-14 {
-  background-position: -62.8rem 0rem;
-}
-header .header-black li.club-15 {
-  background-position: -67.3rem 0rem;
-}
-header .header-black li.club-16 {
-  background-position: -71.9rem 0rem;
-}
-header .header-black li.club-17 {
-  background-position: -75.9rem 0rem;
-}
-header .header-black li.club-18 {
-  background-position: -80.5rem 0rem;
-}
-header .header-black li.club-19 {
-  background-position: -85.5rem 0rem;
-}
-header .header-black li.club-20 {
-  background-position: -90.2rem 0rem;
-}
-header .header-black li.club-21 {
-  background-position: -94.9rem 0rem;
-}
-
-header .header-black li a {
-  width: 3.2rem;
-  height: 3.2rem;
-  display: block;  
-}
-
-/* ==================header inferior=============== */
-
-header #logo {
+header .container #logo {
   position: absolute;
   top: -1.7rem;
 }
 
-header .options {
+header .container .options {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   top: 3.9rem;
   position: relative;
 }
 
-header .options ul {
+header .container .options ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: relative;
   gap: 5.5rem;
+  margin-block: -.9rem;
 }
 
-header .options a {
+header .container .options ul li a {
   color: #fff;
   text-decoration: none;
   font-size: 1.8rem;
 }
 
-header .options .search {
+header .container .options ul li .search {
   border-radius: .5rem;
+  position: relative;
+  top: .6rem;
 }
 
-header .options .search input {
-  background: var(--primary-detail);
+header .container .options ul li .search input, header .container .options ul li .search button {
+  background: #5b2d8f;
   border: none;
   padding: 1rem;
+  margin: 0;
 }
 
-header .options .search input::placeholder {
-  color: #fff;
+header .container .options ul li .search input::-webkit-input-placeholder, header .container .options ul li .search input i, header .container .options ul li .search button::-webkit-input-placeholder, header .container .options ul li .search button i {
+  color: rgba(255, 255, 255, 0.5);
   font-size: 1.5rem;
 }
+
+header .container .options ul li .search input:-ms-input-placeholder, header .container .options ul li .search input i, header .container .options ul li .search button:-ms-input-placeholder, header .container .options ul li .search button i {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1.5rem;
+}
+
+header .container .options ul li .search input::-ms-input-placeholder, header .container .options ul li .search input i, header .container .options ul li .search button::-ms-input-placeholder, header .container .options ul li .search button i {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1.5rem;
+}
+
+header .container .options ul li .search input::placeholder, header .container .options ul li .search input i, header .container .options ul li .search button::placeholder, header .container .options ul li .search button i {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1.5rem;
+}
+
+.primary-image .banner {
+  width: 100vw;
+  height: 72.8rem;
+  position: relative;
+  background: url("../assets/images/banner.jpg") no-repeat;
+  top: -21.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding-inline: 11rem;
+  padding-top: 25rem;
+}
+
+.primary-image .banner .content {
+  color: white;
+}
+
+.primary-image .banner .content h1 {
+  font-size: 7rem;
+  font-weight: 300;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.45);
+}
+
+.primary-image .banner .content h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.45);
+}
+
+.news {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: -13rem;
+}
+
+.news h1 {
+  color: #5d2999;
+  font-weight: 300;
+  font-size: 3.5rem;
+  margin: 0;
+}
+
+.news hr {
+  border: #fde091 solid 5px;
+  width: 20rem;
+  margin: 0;
+  margin-top: 1.5rem;
+}
+
+.news .latest-news {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 5rem;
+  gap: 2rem;
+  padding-inline: 11rem;
+}
+
+.news .latest-news div h4 {
+  color: #5d2999;
+  font: 1.8rem;
+  font-weight: 700;
+  margin: 0;
+  margin-top: 2rem;
+}
+
+.news .latest-news div time {
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+/*# sourceMappingURL=global.css.map */

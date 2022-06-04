@@ -1,0 +1,30 @@
+.primary-image {
+  .banner {
+    width: 100vw;
+    height: 72.8rem;
+    position: relative;
+    background: url("../assets/images/banner.jpg") no-repeat;
+
+    top: -21.5rem;
+
+    @include displayFlex(start, row);
+
+    padding-inline: 11rem;
+    padding-top: 25rem;
+
+    .content {
+      color: white;
+
+      h1 {
+        font-size: 7rem;
+        font-weight: 300;
+        @include textShadow();
+      }
+      h2 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        @include textShadow();
+      }
+    }
+  }
+}
