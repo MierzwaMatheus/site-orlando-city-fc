@@ -188,7 +188,7 @@ header .container .options ul {
           align-items: center;
   position: relative;
   gap: 5.5rem;
-  margin-block: -.9rem;
+  margin-block: -1.9rem;
 }
 
 header .container .options ul li a {
@@ -308,14 +308,41 @@ main .news .latest-news {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin-top: 5rem;
   gap: 2rem;
   padding-inline: 11rem;
+  -webkit-box-align: normal;
+      -ms-flex-align: normal;
+          align-items: normal;
   width: 100%;
+}
+
+main .news .latest-news .owl-dots .owl-dot span {
+  background: #5d2999;
+  opacity: .5;
+}
+
+main .news .latest-news .owl-dots .active span {
+  opacity: 1;
+}
+
+main .news .latest-news .owl-prev, main .news .latest-news .owl-next {
+  background-color: #5d2999;
+  color: white;
+  border-radius: 0;
+  padding-inline: 1.5rem !important;
+  padding-block: 0.8rem !important;
+  font-weight: 700;
+  -webkit-transition: background .3s;
+  transition: background .3s;
+}
+
+main .news .latest-news .owl-prev:hover, main .news .latest-news .owl-next:hover {
+  background: rgba(93, 41, 153, 0.8);
 }
 
 main .news .latest-news div h4 {
@@ -627,5 +654,38 @@ footer .footer-top .contact .social-links a {
 
 footer .footer-top .contact .social-links a div {
   color: rgba(255, 255, 255, 0.5);
+}
+
+#videos main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#videos main h1 {
+  color: #5d2999;
+  font-weight: 300;
+  font-size: 3.5rem;
+  margin: 0;
+  text-transform: uppercase;
+  margin-top: 6rem;
+}
+
+#videos main .video {
+  margin-top: 5rem;
+}
+
+#videos main .news {
+  margin-top: 2.5rem;
 }
 /*# sourceMappingURL=global.css.map */

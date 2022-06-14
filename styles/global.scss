@@ -147,7 +147,7 @@ header {
         position: relative;
         gap: 5.5rem;
 
-        margin-block: -.9rem;
+        margin-block: -1.9rem;
 
         li {
           a {
@@ -228,12 +228,41 @@ main {
     }
   
     .latest-news {
-      @include displayFlex(center, row);
+      @include displayFlex(center, column);
       margin-top: 5rem;
       gap: 2rem;
       padding-inline: 11rem;
 
+      align-items: normal;
+
       width: 100%;
+
+      .owl-dots{
+        .owl-dot span {
+          background: $primary-color;
+          opacity: .5;
+        }
+        .active span{
+          opacity: 1;
+        }
+      }
+
+      .owl-prev, .owl-next {
+        background-color: $primary-color;
+        color: white;
+        border-radius: 0;
+
+        padding-inline: 1.5rem!important;
+        padding-block: .8rem!important;
+
+        font-weight: 700;
+
+        transition: background .3s;
+
+        &:hover {
+          background: $primary-hover;
+        }
+      }
   
       div {
         h4 {
@@ -451,6 +480,32 @@ footer {
 
         
       }
+    }
+  }
+}
+
+#videos {
+  main {
+    @include displayFlex(center, column);
+
+    h1 {
+      color: $primary-color;
+      font-weight: 300;
+      font-size: 3.5rem;
+      margin: 0;
+
+      text-transform: uppercase;
+
+      margin-top: 6rem;
+    }
+
+    .video {
+
+      margin-top: 5rem;
+    }
+
+    .news {
+      margin-top: 2.5rem;
     }
   }
 }
