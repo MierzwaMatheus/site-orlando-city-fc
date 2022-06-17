@@ -4,18 +4,18 @@ $(document).ready(function(){
     nav:true,
     margin:10,
     navText: ["Anterior","Próximo"],
-    responsive: {
-      0: {
-        item: 1
+    responsive : {
+      0 : {
+        items: 1,
       },
-      480: {
-        item: 3
+      480 : {
+        items: 1,
       },
-      768: {
-        item: 4
+      768 : {
+        items: 4,
       },
-      1200: {
-        item: 6
+      1200 : {
+        items: 6,
       }
     }
   })

@@ -11,6 +11,20 @@
   font-size: 62.5%;
 }
 
+::-moz-selection {
+  background-color: #5d2999;
+  color: #fff;
+}
+
+::selection {
+  background-color: #5d2999;
+  color: #fff;
+}
+
+.mobile-buttons {
+  display: none;
+}
+
 body {
   font-family: 'Open Sans', sans-serif;
   width: 100%;

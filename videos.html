@@ -7,11 +7,12 @@
   <title>Orlando City FC</title>
 
   <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" href="./lib/plyr/src/sass/plyr.scss">
   <link rel="stylesheet" href="./lib/OwlCarousel2/dist/assets/owl.carousel.min.css">
   <link rel="stylesheet" href="./lib/OwlCarousel2/dist/assets/owl.theme.default.min.css">
   <script src="https://kit.fontawesome.com/d66c6998b9.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="./styles/global.css">
+  <link rel="stylesheet" href="./styles/mobile_version.css">
+  <link rel="stylesheet" href="https://cdn.plyr.io/2.0.15/plyr.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,6 +22,8 @@
   <header>
     <div class="header-black">
       <div class="container">
+        
+
         <ul>
           <li class="club-01"><a href="#"></a></li>
           <li class="club-02"><a href="#"></a></li>
@@ -47,6 +50,12 @@
       </div>
     </div>
 
+    <div class="mobile-buttons">
+      <button><i class="fa-solid fa-bars"></i></button>
+      <button><i class="fa-solid fa-magnifying-glass"></i></button>
+
+    </div>
+
     <div class="container">
       <img  id="logo" src="./assets/images/orlando-logo.png" alt="Logo">
 
@@ -54,7 +63,6 @@
         <nav>
           <ul>
             <li><a href="index.html">Início</a></li>
-            <li><a href="videos.html">Vídeos</a></li>
             <li><a href="#">Ticket</a></li>
             <li><a href="#">News</a></li>
             <li><a href="#">Schedule</a></li>
@@ -75,7 +83,7 @@
     <hr class="line">
 
     <div class="video">
-      <video src="./assets/mp4/highlights.mp4" controls poster="./assets/images/highlights.jpg"></video>
+      <video id="plyr-video" src="./assets/mp4/highlights.mp4" controls poster="./assets/images/highlights.jpg"></video>
     </div>
     <section class="news">
       <div class="latest-news owl-carousel owl-theme">
@@ -86,49 +94,49 @@
             <time>December 21, 2015</time>
           </div>
         </div>
-        <div class="item" data-video="Orlando_City_Foundation_2015">
+        <div class="items" data-video="Orlando_City_Foundation_2015">
           <div class="item-inner">
             <img src="./assets/images/Orlando_City_Foundation_2015.jpg" alt="imagem noticia">
             <h4>Orlando City Acquires Goalkeeper Joe Bendk from Toronto FC</h4>
             <time>December 21, 2015</time>
           </div>
         </div>
-        <div class="item" data-video="highlights">
+        <div class="items" data-video="highlights">
           <div class="item-inner">
             <img src="./assets/images/highlights.jpg" alt="imagem noticia">
             <h4>Orlando City Acquires Goalkeeper Joe Bendk from Toronto FC</h4>
             <time>December 21, 2015</time>
           </div>
         </div>
-        <div class="item" data-video="Orlando_City_Foundation_2015">
+        <div class="items" data-video="Orlando_City_Foundation_2015">
           <div class="item-inner">
             <img src="./assets/images/Orlando_City_Foundation_2015.jpg" alt="imagem noticia">
             <h4>Orlando City Acquires Goalkeeper Joe Bendk from Toronto FC</h4>
             <time>December 21, 2015</time>
           </div>
         </div>
-        <div class="item" data-video="highlights">
+        <div class="items" data-video="highlights">
           <div class="item-inner">
             <img src="./assets/images/highlights.jpg" alt="imagem noticia">
             <h4>Orlando City Acquires Goalkeeper Joe Bendk from Toronto FC</h4>
             <time>December 21, 2015</time>
           </div>
         </div>
-        <div class="item" data-video="Orlando_City_Foundation_2015">
+        <div class="items" data-video="Orlando_City_Foundation_2015">
           <div class="item-inner">
             <img src="./assets/images/Orlando_City_Foundation_2015.jpg" alt="imagem noticia">
             <h4>Orlando City Acquires Goalkeeper Joe Bendk from Toronto FC</h4>
             <time>December 21, 2015</time>
           </div>
         </div>
-        <div class="item" data-video="highlights">
+        <div class="items" data-video="highlights">
           <div class="item-inner">
             <img src="./assets/images/highlights.jpg" alt="imagem noticia">
             <h4>Orlando City Acquires Goalkeeper Joe Bendk from Toronto FC</h4>
             <time>December 21, 2015</time>
           </div>
         </div>
-        <div class="item" data-video="Orlando_City_Foundation_2015">
+        <div class="items" data-video="Orlando_City_Foundation_2015">
           <div class="item-inner">
             <img src="./assets/images/Orlando_City_Foundation_2015.jpg" alt="imagem noticia">
             <h4>Orlando City Acquires Goalkeeper Joe Bendk from Toronto FC</h4>
@@ -206,8 +214,12 @@
   <script src="./lib/jquery/jquery.min.js"></script>
   <script src="./lib/OwlCarousel2/dist/owl.carousel.min.js"></script>
   <script src="./lib/bootstrap/js/bootstrap.min.js"></script>
-  <script src="./lib/plyr/src/js/plyr.js"></script>
   <script src="./js/effect.js"></script>
+  <script src="https://cdn.plyr.io/2.0.15/plyr.js"></script>
+  <script>
+    plyr.setup("#plyr-video");
+  </script>
+
   
 </body>
 </html>

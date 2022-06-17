@@ -1,0 +1,83 @@
+@media (max-width: 768px) {
+  header .header-black .container ul {
+    display: none;
+    visibility: hidden;
+  }
+  header .container .options ul .search input {
+    width: 6rem;
+  }
+  main .news .latest-news .owl-next, main .news .latest-news .owl-prev {
+    padding-inline: 3rem !important;
+    padding-block: 1rem !important;
+  }
+  main .statistics, main .call-to-action {
+    padding-inline: 3rem;
+  }
+  main .call-to-action p {
+    font-size: 2rem;
+  }
+  footer .footer-top {
+    padding-inline: 3rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  header {
+    height: 10rem;
+  }
+  header .header-black {
+    display: none;
+  }
+  header .mobile-buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding-inline: 1rem;
+    padding-block: 1rem;
+  }
+  header .mobile-buttons button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2.4rem;
+  }
+  header > .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    position: absolute;
+    overflow-x: visible;
+    top: 7px;
+  }
+  header > .container #logo {
+    position: relative;
+    top: 0;
+  }
+  header > .container .options ul {
+    display: none;
+  }
+  footer .footer-top {
+    overflow-x: hidden;
+  }
+}
+/*# sourceMappingURL=mobile_version.css.map */

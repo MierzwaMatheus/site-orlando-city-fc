@@ -1,0 +1,114 @@
+@import './functions';
+@import './colors';
+
+@media (max-width: 768px) {
+  header {
+    .header-black {
+      .container {
+        ul {
+          display: none;
+          visibility: hidden;
+        }
+      }
+    }
+
+    .container {
+      .options {
+        ul {
+  
+          .search {
+            input {
+              width: 6rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  main {
+    .news {
+      .latest-news {
+        .owl-next, .owl-prev {
+          padding-inline: 3rem !important;
+          padding-block: 1rem !important;
+        }
+      }
+    }
+
+    .statistics, .call-to-action {
+      padding-inline: 3rem;
+    }
+
+    .call-to-action{
+      p{
+        font-size: 2rem;
+      }
+    }
+  }
+
+  footer {
+    .footer-top {
+      padding-inline: 3rem;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  * {
+  }
+
+  header {
+    height: 10rem;
+
+    .header-black {
+      display: none;
+    }
+
+    .mobile-buttons {
+      @include displayFlex(space-between, row); 
+      padding-inline: 1rem;
+      padding-block: 1rem;
+
+
+      button {
+        background: none;
+        border: none;
+      
+        color: white;
+        font-size: 2.4rem;
+      }
+    }
+
+    > .container {
+      @include displayFlex(center, row);
+
+      position: absolute;
+      overflow-x: visible;
+
+      top: 7px;
+
+      #logo {
+        position: relative;
+        top: 0;
+      }
+
+      .options {
+        ul {
+          display: none;
+        }
+      }
+    }
+  }
+
+  main {
+  }
+
+
+  footer {
+    .footer-top {
+    overflow-x: hidden;
+
+    }
+  }
+}
