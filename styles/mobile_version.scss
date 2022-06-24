@@ -55,9 +55,7 @@
 }
 
 @media screen and (max-width: 480px) {
-  * {
-  }
-
+  
   header {
     height: 10rem;
 
@@ -67,7 +65,7 @@
 
     .mobile-buttons {
       @include displayFlex(space-between, row); 
-      padding-inline: 1rem;
+      padding-inline: 2rem;
       padding-block: 1rem;
 
 
@@ -101,14 +99,132 @@
     }
   }
 
+  .primary-image {
+    .banner {
+      height: 42.7rem;
+
+      padding-inline: 10rem;
+      background-size: cover;
+
+      .content {
+        h1 {
+          font-size: 5rem;
+        }
+
+        h2 {
+          font-size: 1.6rem;
+        }
+      }
+    }
+  }
+
   main {
+
+    .news {
+      margin-top: -20rem;
+
+      .news-section {
+        
+        #btn-prev, #btn-next {
+          visibility: visible;
+          font-size: 3.5rem;
+
+          border: none;
+          background: none;
+
+          i {
+            color: $primary-color;
+          }
+        }
+  
+        .latest-news {
+          width: 71%;
+          @include displayFlex(center, row);
+          .item {
+            text-align: center;
+            
+          }
+        }
+
+        .owl-dots, .owl-nav {
+          display: none;
+        }
+      }
+
+      
+    }
+    .statistics {
+      flex-direction: column;
+      gap: 5rem;
+    }
+
+    .call-to-action {
+      h1 {
+        text-align: center;
+      }
+    }
   }
 
 
   footer {
     .footer-top {
     overflow-x: hidden;
+    padding-inline: 0;
 
+    justify-content: center;
+
+    img, .popular-posts, .links, .contact-desk-info {
+      display: none;
     }
+
+    .contact {
+      @include displayFlex(center, column);
+      width: 100%;
+
+      .contact-mobile-info {
+        width: 100%;
+
+        display: grid;
+        grid-template-columns: .5fr 1fr 1fr 1fr .5fr 1fr 1fr 1fr .5fr;
+        grid-template-areas: 'A B B B C D D D E ';
+
+        a {
+          @include displayFlex(center, row);
+
+          text-decoration: none;
+          color: $white-opacity;
+          font-size: 2.4rem;
+          
+          background: #11171d;
+          width: 100%;
+          padding-block: 1rem;
+          gap: 1rem;
+        }
+
+        .location-mobile {
+          grid-area: B;
+          justify-self: start;
+        }
+
+        .call-mobile {
+          grid-area: D;
+        }
+      }
+
+      .social-links {
+        a {
+          width: 7rem;
+          height: 7rem;
+
+          div {
+            i {
+              font-size: 3.2rem;
+            }
+          }
+        }
+        }
+      }
+    }
+
   }
 }

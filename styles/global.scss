@@ -207,15 +207,18 @@ header {
     .content {
       color: white;
 
+
       h1 {
         font-size: 7rem;
         font-weight: 300;
+        text-align: center;
         @include textShadow();
       }
       h2 {
         font-size: 2.5rem;
         font-weight: 700;
         @include textShadow();
+        text-align: center;
       }
     }
   }
@@ -236,60 +239,67 @@ main {
       margin: 0;
     }
   
-    .latest-news {
-      @include displayFlex(center, column);
-      margin-top: 5rem;
-      gap: 2rem;
+    .news-section {
+      @include displayFlex(center, row);
       padding-inline: 11rem;
-
-      align-items: normal;
-
       width: 100%;
+      margin-top: 5rem;
 
-      .owl-dots{
-        .owl-dot span {
-          background: $primary-color;
-          opacity: .5;
-        }
-        .active span{
-          opacity: 1;
-        }
+      gap: 2rem;
+
+      #btn-prev, #btn-next {
+        visibility: hidden;
       }
 
-      .owl-prev, .owl-next {
-        background-color: $primary-color;
-        color: white;
-        border-radius: 0;
 
-        padding-inline: 1.5rem!important;
-        padding-block: .8rem!important;
-
-        font-weight: 700;
-
-        transition: background .3s;
-
-        &:hover {
-          background: $primary-hover;
+      .latest-news {
+        width: 100%;
+        .owl-dots{
+          .owl-dot span {
+            background: $primary-color;
+            opacity: .5;
+          }
+          .active span{
+            opacity: 1;
+          }
         }
-      }
   
-      div {
-        h4 {
-          color: $primary-color;
-          font:1.8rem;
+        .owl-prev, .owl-next {
+          background-color: $primary-color;
+          color: white;
+          border-radius: 0;
+  
+          padding-inline: 1.5rem!important;
+          padding-block: .8rem!important;
+  
           font-weight: 700;
-          
-          margin: 0;
-          margin-top: 2rem;
-        }
   
-        time {
-          font-size: 1.5rem;
-          margin-top: 1.5rem;
-          color: $black-opacity;
+          transition: background .3s;
+  
+          &:hover {
+            background: $primary-hover;
+          }
+        }
+    
+        div {
+          h4 {
+            color: $primary-color;
+            font:1.8rem;
+            font-weight: 700;
+            
+            margin: 0;
+            margin-top: 2rem;
+          }
+    
+          time {
+            font-size: 1.5rem;
+            margin-top: 1.5rem;
+            color: $black-opacity;
+          }
         }
       }
     }
+    
   }
 
   .statistics {
@@ -392,6 +402,10 @@ footer {
     color: white;
 
     gap: 3rem;
+
+    .contact-mobile-info {
+      display: none;
+    }
 
   > div{
       width: 33rem;

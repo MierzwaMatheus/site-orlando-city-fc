@@ -278,6 +278,7 @@ header .container .options ul li .search input::placeholder, header .container .
 .primary-image .banner .content h1 {
   font-size: 7rem;
   font-weight: 300;
+  text-align: center;
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.45);
 }
 
@@ -285,6 +286,7 @@ header .container .options ul li .search input::placeholder, header .container .
   font-size: 2.5rem;
   font-weight: 700;
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.45);
+  text-align: center;
 }
 
 main .news {
@@ -312,7 +314,7 @@ main .news h1 {
   margin: 0;
 }
 
-main .news .latest-news {
+main .news .news-section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -322,29 +324,34 @@ main .news .latest-news {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding-inline: 11rem;
+  width: 100%;
   margin-top: 5rem;
   gap: 2rem;
-  padding-inline: 11rem;
-  -webkit-box-align: normal;
-      -ms-flex-align: normal;
-          align-items: normal;
+}
+
+main .news .news-section #btn-prev, main .news .news-section #btn-next {
+  visibility: hidden;
+}
+
+main .news .news-section .latest-news {
   width: 100%;
 }
 
-main .news .latest-news .owl-dots .owl-dot span {
+main .news .news-section .latest-news .owl-dots .owl-dot span {
   background: #5d2999;
   opacity: .5;
 }
 
-main .news .latest-news .owl-dots .active span {
+main .news .news-section .latest-news .owl-dots .active span {
   opacity: 1;
 }
 
-main .news .latest-news .owl-prev, main .news .latest-news .owl-next {
+main .news .news-section .latest-news .owl-prev, main .news .news-section .latest-news .owl-next {
   background-color: #5d2999;
   color: white;
   border-radius: 0;
@@ -355,11 +362,11 @@ main .news .latest-news .owl-prev, main .news .latest-news .owl-next {
   transition: background .3s;
 }
 
-main .news .latest-news .owl-prev:hover, main .news .latest-news .owl-next:hover {
+main .news .news-section .latest-news .owl-prev:hover, main .news .news-section .latest-news .owl-next:hover {
   background: rgba(93, 41, 153, 0.8);
 }
 
-main .news .latest-news div h4 {
+main .news .news-section .latest-news div h4 {
   color: #5d2999;
   font: 1.8rem;
   font-weight: 700;
@@ -367,7 +374,7 @@ main .news .latest-news div h4 {
   margin-top: 2rem;
 }
 
-main .news .latest-news div time {
+main .news .news-section .latest-news div time {
   font-size: 1.5rem;
   margin-top: 1.5rem;
   color: rgba(0, 0, 0, 0.5);
@@ -526,6 +533,10 @@ footer .footer-top {
   margin-top: 11.5rem;
   color: white;
   gap: 3rem;
+}
+
+footer .footer-top .contact-mobile-info {
+  display: none;
 }
 
 footer .footer-top > div {
