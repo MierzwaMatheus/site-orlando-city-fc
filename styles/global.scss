@@ -43,7 +43,7 @@ header {
   background: $primary-opacity;
   position: relative;
 
-  z-index: 2;
+  z-index: 10;
 
   width: 100%;
 
@@ -138,11 +138,12 @@ header {
   }
 
   .container {
-      position: relative;
+    position: relative;
 
     #logo {
         position: absolute;
         top: -1.7rem;
+        z-index: 15;
     }
 
     .options {
@@ -523,7 +524,7 @@ footer {
     }
 
     .video {
-
+      width: 65rem;
       margin-top: 5rem;
     }
 

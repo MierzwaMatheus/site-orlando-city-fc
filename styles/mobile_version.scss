@@ -13,17 +13,16 @@
     }
 
     .container {
-      .options {
-        ul {
-  
-          .search {
-            input {
-              width: 6rem;
+        .options {
+          ul {
+            .search {
+              input {
+                width: 6rem;
+              }
             }
           }
         }
       }
-    }
   }
 
   main {
@@ -68,6 +67,11 @@
       padding-inline: 2rem;
       padding-block: 1rem;
 
+      background: $primary-color;
+      position: fixed;
+
+      width: 100%;
+
 
       button {
         background: none;
@@ -79,7 +83,6 @@
     }
 
     > .container {
-      @include displayFlex(center, row);
 
       position: absolute;
       overflow-x: visible;
@@ -89,13 +92,84 @@
       #logo {
         position: relative;
         top: 0;
+        left: calc(50% - 12.5%);
+        width: 25%;
+        transition: .5;
       }
 
-      .options {
-        ul {
-          display: none;
+      #mob-menu {
+        position: fixed;
+        background-color: white;
+        width: 80%;
+        height: 100%;
+        z-index: 5;
+        left: -80%;
+        top: 5.6rem;
+        transition: .5;
+
+        .options {
+          .search-item {
+            display: none;
+            .search {
+              display: none;
+            }
+          }
         }
       }
+    }
+  }
+
+  header.open-menu {
+      .container{
+
+        #mob-mask{
+          position: fixed;
+          width: 100%;
+          height: 100%;
+          background: $black-opacity;
+          top: 5.6rem;
+          z-index: 4;
+          left: 0;
+        }
+
+        #logo {
+          position: fixed;
+          width: 66px;
+          top: 80px;
+          left: calc(41% - 33px);
+          padding-bottom: 1.5rem;
+          border-bottom: 1px solid $black-opacity;
+        }
+
+        #mob-menu {
+          left: 0;
+          @include displayFlex(start, column);
+          .options {
+            width: 100%;
+            @include displayFlex(start, column);
+            nav {
+              width: 100%;
+              ul {
+                @include displayFlex(center, column);
+                margin-top: 9.1rem;
+                width: 100%;
+                padding-inline: 2.5rem;
+                li{
+                  @include displayFlex(center, column);
+                  padding-bottom: 1.5rem;
+                  width: 100%;
+                  border-bottom: 1px solid $black-opacity;
+                  a{
+                    font-size: 2.6rem;
+                    font-weight: 700;
+                    color: $primary-color;
+                  }
+                }
+              }
+            }
+            
+          }
+        }
     }
   }
 
@@ -131,6 +205,10 @@
 
           border: none;
           background: none;
+          z-index: 5;
+
+          position: relative;
+          top: -45px;
 
           i {
             color: $primary-color;
@@ -138,7 +216,7 @@
         }
   
         .latest-news {
-          width: 71%;
+          width: 146%;
           @include displayFlex(center, row);
           .item {
             text-align: center;
@@ -157,14 +235,21 @@
       flex-direction: column;
       gap: 5rem;
     }
-
     .call-to-action {
+      margin-top: 5rem;
       h1 {
         text-align: center;
       }
     }
   }
 
+  #videos {
+    main {
+      .video {
+        width: 40rem;
+      }
+    }
+  }
 
   footer {
     .footer-top {

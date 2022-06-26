@@ -44,7 +44,7 @@ header {
   height: 15rem;
   background: rgba(93, 41, 153, 0.8);
   position: relative;
-  z-index: 2;
+  z-index: 10;
   width: 100%;
 }
 
@@ -173,6 +173,7 @@ header .container {
 header .container #logo {
   position: absolute;
   top: -1.7rem;
+  z-index: 15;
 }
 
 header .container .options {
@@ -707,6 +708,7 @@ footer .footer-top .contact .social-links a div {
 }
 
 #videos main .video {
+  width: 65rem;
   margin-top: 5rem;
 }
 

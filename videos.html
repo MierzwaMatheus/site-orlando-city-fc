@@ -19,7 +19,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body id="videos">
-  <header>
+  <!-- open-menu -->
+  <header class="open-menu">
     <div class="header-black">
       <div class="container">
         
@@ -53,28 +54,32 @@
     <div class="mobile-buttons">
       <button><i class="fa-solid fa-bars"></i></button>
       <button><i class="fa-solid fa-magnifying-glass"></i></button>
-
     </div>
 
     <div class="container">
+      <div id="mob-mask"></div>
+
       <img  id="logo" src="./assets/images/orlando-logo.png" alt="Logo">
 
-      <div class="options">
-        <nav>
-          <ul>
-            <li><a href="index.html">Início</a></li>
-            <li><a href="#">Ticket</a></li>
-            <li><a href="#">News</a></li>
-            <li><a href="#">Schedule</a></li>
-            <li>
-              <div class="input-group mb-3 search" >
-                <input id="search-input" type="search" class="form-control" placeholder="Search..." aria-label="Search..." aria-describedby="button-addon2">
-                <button type="button" id="button-addon2"><i class="fa-solid fa-magnifying-glass"></i></button>
-              </div>
-            </li>
-          </ul>
-        </nav>
+      <div id="mob-menu">
+        <div class="options">
+          <nav>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#">Ticket</a></li>
+              <li><a href="#">News</a></li>
+              <li><a href="#">Schedule</a></li>
+              <li class="search-item">
+                <div class="input-group mb-3 search" >
+                  <input id="search-input" type="search" class="form-control" placeholder="Search..." aria-label="Search..." aria-describedby="button-addon2">
+                  <button type="button" id="button-addon2"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
+      
     </div>
   </header>
 
@@ -86,68 +91,72 @@
       <video id="plyr-video" src="./assets/mp4/highlights.mp4" controls poster="./assets/images/highlights.jpg"></video>
     </div>
     <section class="news">
-      <div class="latest-news owl-carousel owl-theme">
-        <div class="item" data-video="highlights">
-          <div class="item-inner">
-            <img src="./assets/images/highlights.jpg" alt="imagem noticia">
-            <h4>Orlando City Acquires Goalkeeper Joe Bendk from Toronto FC</h4>
-            <time>December 21, 2015</time>
-          </div>
-        </div>
-        <div class="items" data-video="Orlando_City_Foundation_2015">
-          <div class="item-inner">
-            <img src="./assets/images/Orlando_City_Foundation_2015.jpg" alt="imagem noticia">
-            <h4>Orlando City Acquires Goalkeeper Joe Bendk from Toronto FC</h4>
-            <time>December 21, 2015</time>
-          </div>
-        </div>
-        <div class="items" data-video="highlights">
-          <div class="item-inner">
-            <img src="./assets/images/highlights.jpg" alt="imagem noticia">
-            <h4>Orlando City Acquires Goalkeeper Joe Bendk from Toronto FC</h4>
-            <time>December 21, 2015</time>
-          </div>
-        </div>
-        <div class="items" data-video="Orlando_City_Foundation_2015">
-          <div class="item-inner">
-            <img src="./assets/images/Orlando_City_Foundation_2015.jpg" alt="imagem noticia">
-            <h4>Orlando City Acquires Goalkeeper Joe Bendk from Toronto FC</h4>
-            <time>December 21, 2015</time>
-          </div>
-        </div>
-        <div class="items" data-video="highlights">
-          <div class="item-inner">
-            <img src="./assets/images/highlights.jpg" alt="imagem noticia">
-            <h4>Orlando City Acquires Goalkeeper Joe Bendk from Toronto FC</h4>
-            <time>December 21, 2015</time>
-          </div>
-        </div>
-        <div class="items" data-video="Orlando_City_Foundation_2015">
-          <div class="item-inner">
-            <img src="./assets/images/Orlando_City_Foundation_2015.jpg" alt="imagem noticia">
-            <h4>Orlando City Acquires Goalkeeper Joe Bendk from Toronto FC</h4>
-            <time>December 21, 2015</time>
-          </div>
-        </div>
-        <div class="items" data-video="highlights">
-          <div class="item-inner">
-            <img src="./assets/images/highlights.jpg" alt="imagem noticia">
-            <h4>Orlando City Acquires Goalkeeper Joe Bendk from Toronto FC</h4>
-            <time>December 21, 2015</time>
-          </div>
-        </div>
-        <div class="items" data-video="Orlando_City_Foundation_2015">
-          <div class="item-inner">
-            <img src="./assets/images/Orlando_City_Foundation_2015.jpg" alt="imagem noticia">
-            <h4>Orlando City Acquires Goalkeeper Joe Bendk from Toronto FC</h4>
-            <time>December 21, 2015</time>
-          </div>
-        </div>
+      <div class="news-section ">
+        <button id="btn-prev" class="owl-prev" type="button"><i class="fa-solid fa-angle-left" id="prev"></i></button>
 
+        <div class="latest-news owl-theme owl-carousel ">
+          <div class="item" data-video="highlights">
+            <div class="item-inner">
+              <img src="./assets/images/highlights.jpg" alt="imagem noticia">
+              <h4>Orlando City Acquires Goalkeeper Joe Bendk from Toronto FC</h4>
+              <time class="time">December 21, 2015</time>
+            </div>
+          </div>
+          <div class="item" data-video="Orlando_City_Foundation_2015">
+            <div class="item-inner">
+              <img src="./assets/images/Orlando_City_Foundation_2015.jpg" alt="imagem noticia">
+              <h4>Orlando City Acquires Goalkeeper Joe Bendk from Toronto FC</h4>
+              <time class="time">December 21, 2015</time>
+            </div>
+          </div>
+          <div class="item" data-video="highlights">
+            <div class="item-inner">
+              <img src="./assets/images/highlights.jpg" alt="imagem noticia">
+              <h4>Orlando City Acquires Goalkeeper Joe Bendk from Toronto FC</h4>
+              <time class="time">December 21, 2015</time>
+            </div>
+          </div>
+          <div class="item" data-video="Orlando_City_Foundation_2015">
+            <div class="item-inner">
+              <img src="./assets/images/Orlando_City_Foundation_2015.jpg" alt="imagem noticia">
+              <h4>Orlando City Acquires Goalkeeper Joe Bendk from Toronto FC</h4>
+              <time class="time">December 21, 2015</time>
+            </div>
+          </div>
+          <div class="item" data-video="highlights">
+            <div class="item-inner">
+              <img src="./assets/images/highlights.jpg" alt="imagem noticia">
+              <h4>Orlando City Acquires Goalkeeper Joe Bendk from Toronto FC</h4>
+              <time class="time">December 21, 2015</time>
+            </div>
+          </div>
+          <div class="item" data-video="Orlando_City_Foundation_2015">
+            <div class="item-inner">
+              <img src="./assets/images/Orlando_City_Foundation_2015.jpg" alt="imagem noticia">
+              <h4>Orlando City Acquires Goalkeeper Joe Bendk from Toronto FC</h4>
+              <time class="time">December 21, 2015</time>
+            </div>
+          </div>
+          <div class="item" data-video="highlights">
+            <div class="item-inner">
+              <img src="./assets/images/highlights.jpg" alt="imagem noticia">
+              <h4>Orlando City Acquires Goalkeeper Joe Bendk from Toronto FC</h4>
+              <time class="time">December 21, 2015</time>
+            </div>
+          </div>
+          <div class="item" data-video="Orlando_City_Foundation_2015">
+            <div class="item-inner">
+              <img src="./assets/images/Orlando_City_Foundation_2015.jpg" alt="imagem noticia">
+              <h4>Orlando City Acquires Goalkeeper Joe Bendk from Toronto FC</h4>
+              <time class="time">December 21, 2015</time>
+            </div>
+          </div>
+          
+        </div> 
+
+        <button id="btn-next" class="owl-next" type="button"><i class="fa-solid fa-angle-right" id="next"></i></button>
         
       </div>
-        
-        </div>
     </section>
   </main>
 

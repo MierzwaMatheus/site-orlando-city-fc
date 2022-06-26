@@ -30,3 +30,22 @@ $(function() {
     });
   });
 });
+
+// const owl = $(".item").data(owlCarousel)
+
+// $("#btn-prev").on("click", () => {
+//   owl.prev();
+// })
+// $("#btn-next").on("click", () => {
+//   owl.next();
+// })
+
+const owl = $(".owl-carousel");
+
+$('#btn-prev').click(function(){
+  owl.trigger('prev.owl.carousel')
+});
+
+$('#btn-next').click(function(){
+  owl.trigger('next.owl.carousel')
+});
