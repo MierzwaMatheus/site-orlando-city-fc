@@ -49,3 +49,9 @@ $('#btn-prev').click(function(){
 $('#btn-next').click(function(){
   owl.trigger('next.owl.carousel')
 });
+
+const element = $("#header");
+
+$(".menu").click(function() {
+  element.toggleClass("open-menu");
+})

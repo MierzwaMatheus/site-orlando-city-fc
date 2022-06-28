@@ -20,7 +20,7 @@
 </head>
 <body id="videos">
   <!-- open-menu -->
-  <header class="open-menu">
+  <header id="header">
     <div class="header-black">
       <div class="container">
         
@@ -52,7 +52,7 @@
     </div>
 
     <div class="mobile-buttons">
-      <button><i class="fa-solid fa-bars"></i></button>
+      <button class="menu"><i class="fa-solid fa-bars"></i></button>
       <button><i class="fa-solid fa-magnifying-glass"></i></button>
     </div>
 
@@ -69,7 +69,7 @@
               <li><a href="#">Ticket</a></li>
               <li><a href="#">News</a></li>
               <li><a href="#">Schedule</a></li>
-              <li class="search-item">
+              <li id="search-item">
                 <div class="input-group mb-3 search" >
                   <input id="search-input" type="search" class="form-control" placeholder="Search..." aria-label="Search..." aria-describedby="button-addon2">
                   <button type="button" id="button-addon2"><i class="fa-solid fa-magnifying-glass"></i></button>
@@ -78,6 +78,9 @@
             </ul>
           </nav>
         </div>
+
+        <button id="close-button" class="menu"><i class="fa-solid fa-xmark"></i>
+        </button>
       </div>
       
     </div>
